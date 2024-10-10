@@ -4,20 +4,20 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-
-const computerChoice = getComputerChoice();
-console.log("Computer chose:", computerChoice);
-
 const getChoice = document.getElementById("user");
 
 function getPlayerChoice() {
     const playerChoice = getChoice.value; 
+    const computerChoice = getComputerChoice(); 
+    console.log("Computer chose:", computerChoice);
     console.log("You picked:", playerChoice);
 
     
+    document.getElementById("cChoice").innerHTML = "AI chose " + computerChoice;
+
+  
     if (playerChoice === computerChoice) {
         document.getElementById("result").innerHTML = "It's a tie!";
-        document.getElementById("cChoice").innerHTML = "AI chose " + computerChoice;
     } 
     else if (playerChoice === "rock" && computerChoice === "paper") {
         document.getElementById("result").innerHTML = "You lose! Paper covers Rock.";
