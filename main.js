@@ -4,7 +4,7 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-// Get the computer's choice
+
 const computerChoice = getComputerChoice();
 console.log("Computer chose:", computerChoice);
 
@@ -14,9 +14,10 @@ function getPlayerChoice() {
     const playerChoice = getChoice.value; 
     console.log("You picked:", playerChoice);
 
-   
+    
     if (playerChoice === computerChoice) {
         document.getElementById("result").innerHTML = "It's a tie!";
+        document.getElementById("cChoice").innerHTML = "AI chose " + computerChoice;
     } 
     else if (playerChoice === "rock" && computerChoice === "paper") {
         document.getElementById("result").innerHTML = "You lose! Paper covers Rock.";
