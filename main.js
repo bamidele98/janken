@@ -49,10 +49,11 @@ function getPlayerChoice() {
 if (roundCount === 5) {
 if (playerScore > computerScore ){
     document.getElementById("result").innerHTML = `You win this round ${playerScore} - ${computerScore}`;
+    document.getElementById("cChoice").innerHTML = '';
 }
 else{
     document.getElementById("result").innerHTML = `You lose this round ${playerScore} - ${computerScore}`;
-    
+    document.getElementById("cChoice").innerHTML = '';
 }
 playerScore = 0;
 computerScore = 0;
