@@ -44,7 +44,8 @@ function getPlayerChoice() {
     else {
         document.getElementById("result").innerHTML = "Invalid choice. Please choose Rock, Paper, or Scissors.";
     }
-    roundCount++
+    roundCount++;
+    getChoice.value = '';
     
 
 if (roundCount === 5) {
