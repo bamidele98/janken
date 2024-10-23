@@ -53,6 +53,10 @@ if (playerScore > computerScore ){
     document.getElementById("result").innerHTML = `You win this round ${playerScore} - ${computerScore}`;
     document.getElementById("cChoice").innerHTML = '';
 }
+else if (playerScore === computerScore){
+    document.getElementById("result").innerHTML = `This round was a draw ${playerScore} - ${computerScore}`;
+    document.getElementById("cChoice").innerHTML = '';
+}
 else{
     document.getElementById("result").innerHTML = `You lose this round ${playerScore} - ${computerScore}`;
     document.getElementById("cChoice").innerHTML = '';
