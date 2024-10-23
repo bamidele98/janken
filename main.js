@@ -45,6 +45,7 @@ function getPlayerChoice() {
         document.getElementById("result").innerHTML = "Invalid choice. Please choose Rock, Paper, or Scissors.";
     }
     roundCount++
+    
 
 if (roundCount === 5) {
 if (playerScore > computerScore ){
@@ -61,6 +62,6 @@ roundCount = 0;
 }
 }
 
-getChoice.addEventListener('change', getPlayerChoice);
+getChoice.addEventListener('input', getPlayerChoice);
 
 
